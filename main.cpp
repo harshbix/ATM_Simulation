@@ -28,12 +28,12 @@ public:
     }
 
     void checkBalance() {
-        cout << "\nYour current balance is: $" << balance << endl;
+        cout << "\nYour current balance is: Tshs. " << balance << endl;
     }
 
     void withdrawCash() {
         double amount;
-        cout << "\nEnter the amount to withdraw: $";
+        cout << "\nEnter the amount to withdraw: Tshs. ";
         cin >> amount;
 
         if (amount > balance) {
@@ -42,7 +42,7 @@ public:
             cout << "Invalid amount entered." << endl;
         } else {
             balance -= amount;
-            cout << "$" << amount << " withdrawn successfully. Your new balance is $" << balance << endl;
+            cout << "Tshs. " << amount << " withdrawn successfully. Your new balance is Tshs. " << balance << endl;
         }
     }
 
