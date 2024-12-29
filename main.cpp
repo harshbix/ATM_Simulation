@@ -70,7 +70,7 @@ public:
 };
 
 int main() {
-    ATM myATM("1234", 1000.00); // Default PIN and balance
+    ATM myATM("1234", 100000.00); // Default PIN and balance
 
     string enteredPin;
     cout << "Welcome to the ATM. Please enter your PIN: ";
