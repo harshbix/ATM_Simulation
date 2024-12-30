@@ -73,7 +73,7 @@ int main() {
     ATM myATM("1234", 100000.00); // Default PIN and balance
 
     string enteredPin;
-    cout << "Welcome to the ATM. Please enter your PIN: ";
+    cout << "\nWelcome to the ATM. Please enter your PIN: ";
     cin >> enteredPin;
 
     if (myATM.verifyPin(enteredPin)) {
