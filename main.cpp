@@ -3,7 +3,7 @@
 
 using namespace std;
 
-class ATM {
+class ATM { //class blueprint
 private:
     string pin;
     double balance;
