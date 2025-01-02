@@ -18,7 +18,7 @@ public: //public variables
         return enteredPin == pin;
     }
 
-    void showMenu() {
+    void showMenu() { // instance for running the program
         cout << "\n--- ATM Menu ---" << endl;
         cout << "1. Check Balance" << endl;
         cout << "2. Withdraw Cash" << endl;
