@@ -77,7 +77,7 @@ int main() {
     cin >> enteredPin;
 
     if (myATM.verifyPin(enteredPin)) {
-        int choice;
+        int choice; // variable to store choices
         do {
             myATM.showMenu(); //instance if pin is authenticated
             cin >> choice;
