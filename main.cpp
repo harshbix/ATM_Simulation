@@ -14,7 +14,7 @@ public: //public variables
         balance = initialBalance;
     }
 
-    bool verifyPin(string enteredPin) {
+    bool verifyPin(string enteredPin) { //change pin state
         return enteredPin == pin;
     }
 
@@ -72,14 +72,14 @@ public: //public variables
 int main() {
     ATM myATM("1234", 100000.00); // Default PIN and balance
 
-    string enteredPin;
+    string enteredPin; //if change pin state issued
     cout << "\nWelcome to the ATM. Please enter your PIN: ";
     cin >> enteredPin;
 
     if (myATM.verifyPin(enteredPin)) {
         int choice;
         do {
-            myATM.showMenu();
+            myATM.showMenu(); //instance if pin is authenticated
             cin >> choice;
 
             switch (choice) {
@@ -98,7 +98,7 @@ int main() {
                 default:
                     cout << "Invalid choice. Please try again." << endl;
             }
-        } while (choice != 4);
+        } while (choice != 4); // if pin is wrong
     } else {
         cout << "Incorrect PIN. Access denied." << endl;
     }
