@@ -4,11 +4,11 @@
 using namespace std;
 
 class ATM { //class blueprint
-private:
+private: // private variables
     string pin;
     double balance;
 
-public:
+public: //public variables
     ATM(string initialPin, double initialBalance) {
         pin = initialPin;
         balance = initialBalance;
